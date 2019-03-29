@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 ## Section For Init
 window = Tk()
-window.title("Poliandrom Checker")
+window.title("Palindrom Checker")
 window.geometry('350x200')
 lbl = Label(window, text="Input Word : ")
 lbl.grid(column=0, row=2)
@@ -19,9 +19,9 @@ def clicked():
     for i in val:
         wordReversed = i + wordReversed
     if val.lower() == wordReversed.lower():
-        note = 'Polindrome'
+        note = 'Palindrome'
     else:
-        note = 'Bukan Polindrome'
+        note = 'Bukan Palindrome'
 
     ## Show Message Box
     messagebox.showinfo('Result Check', 'Keterangan : ' + note)
